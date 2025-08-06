@@ -1,0 +1,147 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css" />
+<link
+  href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+  rel="stylesheet"
+/>
+<nav
+  class="navbar custom-navbar navbar-expand-lg py-3"
+  data-aos="fade-down"
+  data-aos-delay="200"
+  data-aos-duration="1000"
+>
+  <div class="container">
+    <!-- Left: Brand -->
+    <a class="navbar-brand" href="#">
+      <span>Afra</span>
+      <span>Tetlay</span>
+    </a>
+
+    <!-- Right: Links -->
+    <div class="ms-auto navbar-nav d-flex flex-row align-items-center gap-5">
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="case-studies.html">Case Studies</a>
+      <a class="nav-link pill-button" href="get-in-touch.html">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text Side -->
+      <div
+        class="col-md-6 mb-4 mb-md-0 text-center d-flex flex-column align-items-center"
+        data-aos="fade-right"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <h1 class="display-4 fw-bold heading-primary">Case Studies</h1>
+
+        <!-- Scroll Down Image Button -->
+        <a href="#scroll-target" class="mt-5">
+          <img
+            class="scroll-btn"
+            src="images/scroll-image.png"
+            alt="Scroll down"
+          />
+        </a>
+      </div>
+
+      <!-- Image Side -->
+      <div
+        class="col-md-6 text-center"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <img
+          src="images/case-studies-image.png"
+          alt="Hero"
+          class="img-fluid hero-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scroll-target" class="case-studies-section py-5">
+  <div class="container">
+    <!-- Case Study 1 -->
+    <div class="row align-items-center mb-5">
+      <!-- Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+        <img src="images/db-image.png" alt="DB Booking" class="img-fluid" />
+      </div>
+
+      <!-- Content Card -->
+      <div class="col-lg-6">
+        <div class="p-4 rounded text-white" style="background-color: #e0001b">
+          <!-- Tags -->
+          <div class="mb-2">
+            <span class="badge bg-light text-dark me-2">Desktop</span>
+            <span class="badge bg-light text-dark me-2">Web Mobile</span>
+            <span class="badge bg-light text-dark">App</span>
+          </div>
+          <!-- Title & Description -->
+          <h5 class="fw-bold">Deutsche Bahn (DB) Booking page</h5>
+          <p class="mb-4">
+            Updating the current Order History on app and website to make it
+            more customer friendly and making sure the important information
+            they are looking for are easily displayed.
+          </p>
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn btn-light text-danger fw-semibold rounded-pill px-4 py-2"
+          >
+            View Case Study
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study 2 -->
+    <div class="row align-items-center flex-lg-row-reverse">
+      <!-- Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+        <img src="images/gamehaul-app.png" alt="Gamehaul" class="img-fluid" />
+      </div>
+
+      <!-- Content Card -->
+      <div class="col-lg-6">
+        <div class="p-4 rounded text-white" style="background-color: #2297a2">
+          <!-- Tag -->
+          <div class="mb-2">
+            <span class="badge bg-light text-dark">App</span>
+          </div>
+          <!-- Title & Description -->
+          <h5 class="fw-bold">Gamehaul – Games eCommerce app</h5>
+          <p class="mb-4">
+            Getting customers to add events that they may have coming up in the
+            future to add as a reminder. Making sure their journey is as easy as
+            possible.
+          </p>
+          <!-- Button -->
+          <a
+            href="#"
+            class="btn btn-light text-dark fw-semibold rounded-pill px-4 py-2"
+          >
+            View Case Study
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // only animate once
+  });
+</script>
