@@ -118,6 +118,14 @@ html {
   height: auto;
 }
 
+/* Case Studies image */
+.case-study-img {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center it */
+}
+
 /*Contact us Page*/
 .email {
   text-decoration: none;
