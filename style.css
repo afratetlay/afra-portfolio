@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
 /* Background colour */
 .bg-custom-gradient {
   background: linear-gradient(
@@ -118,12 +123,29 @@ html {
   height: auto;
 }
 
+/* Case Studies btn colour text */
+.text-colour {
+  color: EC2116;
+}
+
 /* Case Studies image */
 .case-study-img {
   max-width: 75%;
   height: auto;
   display: block;
   margin: 0 auto; /* center it */
+}
+
+.background-red {
+  background-color: #ec2116;
+}
+
+.background-blue {
+  background-color: #background-blue;
+}
+
+.custom-padding {
+  padding: 50px 150px;
 }
 
 /*Contact us Page*/
