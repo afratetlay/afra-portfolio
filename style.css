@@ -124,8 +124,14 @@ body {
 }
 
 /* Case Studies btn colour text */
-.text-colour {
-  color: EC2116;
+.text-red {
+  color: #ec2116;
+}
+.text-blue {
+  color: #1f989f;
+}
+.text-green {
+  color: #5f6f52;
 }
 
 /* Case Studies image */
@@ -141,7 +147,14 @@ body {
 }
 
 .background-blue {
-  background-color: #background-blue;
+  background-color: #1f989f;
+}
+.background-green {
+  background-color: #5f6f52;
+}
+
+.background-light-red {
+  background-color: #f8dddd;
 }
 
 .custom-padding {

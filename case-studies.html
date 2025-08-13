@@ -81,9 +81,9 @@
       <div class="rounded text-white background-red custom-padding">
         <!-- Tags -->
         <div class="mb-4">
-          <span class="badge bg-light text-colour me-2">Desktop</span>
-          <span class="badge bg-light text-colour me-2">Web Mobile</span>
-          <span class="badge bg-light text-colour">App</span>
+          <span class="badge bg-light text-red me-2">Desktop</span>
+          <span class="badge bg-light text-red me-2">Web Mobile</span>
+          <span class="badge bg-light text-red">App</span>
         </div>
         <!-- Title & Description -->
         <h5 class="fw-bold">Deutsche Bahn (DB) Booking page</h5>
@@ -94,8 +94,8 @@
         </p>
         <!-- Button -->
         <a
-          href="#"
-          class="btn btn-light text-colour fw-semibold rounded-pill px-4 py-2"
+          href="db.html"
+          class="btn btn-light text-red fw-semibold rounded-pill px-4 py-2"
         >
           View Case Study
         </a>
@@ -104,7 +104,7 @@
   </div>
 
   <!-- Case Study 2 -->
-  <div class="row align-items-center flex-lg-row-reverse">
+  <div class="row align-items-center flex-lg-row-reverse mb-5">
     <!-- Image -->
     <div class="col-lg-6 mb-4 mb-lg-0 text-center">
       <img
@@ -116,17 +116,14 @@
 
     <!-- Content Card -->
     <div class="col-lg-6">
-      <div
-        class="rounded text-white custom-padding background-blue"
-        style="background-color: #2297a2"
-      >
+      <div class="rounded text-white custom-padding background-blue">
         <!-- Tag -->
         <div class="mb-4">
-          <span class="badge bg-light text-dark">App</span>
+          <span class="badge bg-light text-blue">App</span>
         </div>
         <!-- Title & Description -->
         <h5 class="fw-bold">Gamehaul – Games eCommerce app</h5>
-        <p class="mb-4">
+        <p class="mb-5">
           Getting customers to add events that they may have coming up in the
           future to add as a reminder. Making sure their journey is as easy as
           possible.
@@ -134,7 +131,43 @@
         <!-- Button -->
         <a
           href="#"
-          class="btn btn-light text-dark fw-semibold rounded-pill px-4 py-2"
+          class="btn btn-light text-blue fw-semibold rounded-pill px-4 py-2"
+        >
+          View Case Study
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case Study 3 -->
+  <div class="row align-items-center">
+    <!-- Image -->
+    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+      <img
+        src="images/plate-craft-image.png"
+        alt="DB Booking"
+        class="case-study-img"
+      />
+    </div>
+
+    <!-- Content Card -->
+    <div class="col-lg-6">
+      <div class="rounded text-white background-green custom-padding">
+        <!-- Tags -->
+        <div class="mb-4">
+          <span class="badge bg-light text-green me-2">Desktop</span>
+          <span class="badge bg-light text-green me-2">Web Mobile</span>
+        </div>
+        <!-- Title & Description -->
+        <h5 class="fw-bold">Plate Craft - Online delivery service</h5>
+        <p class="mb-4">
+          Redesigning the Scentaddict page to make it easy for customers to add
+          scents they want to come for the next 12 months.
+        </p>
+        <!-- Button -->
+        <a
+          href="#"
+          class="btn btn-light text-green fw-semibold rounded-pill px-4 py-2"
         >
           View Case Study
         </a>
@@ -142,11 +175,15 @@
     </div>
   </div>
 </section>
+<footer class="text-center py-3 bg-dark text-white">
+  &copy; <span id="year"></span> Afra Tetlay. All rights reserved.
+</footer>
 
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({
-    once: true, // only animate once
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({ once: true }); // only animate once
+    document.getElementById("year").textContent = new Date().getFullYear();
   });
 </script>
