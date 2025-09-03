@@ -162,6 +162,12 @@ body {
 .background-light-red {
   background-color: #f8dddd;
 }
+.background-light-blue {
+  background-color: #f8dddd;
+}
+.background-light-green {
+  background-color: #f8dddd;
+}
 
 .custom-padding {
   padding: 50px 150px;
