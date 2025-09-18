@@ -173,6 +173,23 @@ body {
   padding: 50px 150px;
 }
 
+/* Gamehaul*/
+
+/* 4 Small images */
+.case-study-gamehaul {
+  max-width: 75%;
+  height: auto;
+  display: block;
+}
+
+/*Storyboard images*/
+.equal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 /*Contact us Page*/
 .email {
   text-decoration: none;
