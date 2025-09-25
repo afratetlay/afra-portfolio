@@ -114,6 +114,25 @@ body {
   left: -50px;
 }
 
+/* Remove/override for tablets and smaller */
+@media (max-width: 992px) {
+  .custom-hero-img {
+    margin-top: 0; /* remove top margin */
+    position: static; /* reset positioning */
+    left: 0; /* reset left offset */
+  }
+}
+
+/* Optional: extra adjustments for phones */
+@media (max-width: 576px) {
+  .custom-hero-img {
+    margin-top: 0;
+    position: static;
+    left: 0;
+    width: 100%; /* make image fully responsive on very small screens */
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-image {
     margin-top: 2rem;
@@ -190,8 +209,42 @@ body {
   border-radius: 6px;
 }
 
+/* PlateCraft */
+
+/* Body/ Text text */
+.space-top {
+  padding-top: 145px;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+.fs-8 {
+  font-size: 12px;
+}
+.fs-9 {
+  font-size: 18px;
+}
+
+/* Icon size */
+.custom-gap {
+  gap: 8rem; /* 10rem spacing between icons */
+}
+
+.custom-icon {
+  font-size: 30px; /* set icon size */
+}
+
 /*Contact us Page*/
 .email {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 992px) {
+  /* md and below */
+  .hero-section {
+    padding-left: 1rem; /* or 0 */
+    padding-right: 1rem; /* or 0 */
+  }
 }

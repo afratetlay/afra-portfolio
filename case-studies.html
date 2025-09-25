@@ -7,6 +7,7 @@
   href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
   rel="stylesheet"
 />
+<!-- Custom Navbar -->
 <nav
   class="navbar custom-navbar navbar-expand-lg py-3"
   data-aos="fade-down"
@@ -14,17 +15,36 @@
   data-aos-duration="1000"
 >
   <div class="container">
-    <!-- Left: Brand -->
-    <a class="navbar-brand" href="index.html">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
       <span>Afra</span>
       <span>Tetlay</span>
     </a>
 
-    <!-- Right: Links -->
-    <div class="ms-auto navbar-nav d-flex flex-row align-items-center gap-5">
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="case-studies.html">Case Studies</a>
-      <a class="nav-link pill-button" href="get-in-touch.html">Get in Touch</a>
+    <!-- Toggler / Hamburger -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <div
+        class="ms-auto navbar-nav d-flex flex-column flex-lg-row align-items-start align-lg-center gap-3 gap-lg-5"
+      >
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="case-studies.html">Case Studies</a>
+        <a class="nav-link pill-button" href="get-in-touch.html"
+          >Get in Touch</a
+        >
+      </div>
     </div>
   </div>
 </nav>
@@ -180,6 +200,8 @@
 </footer>
 
 <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
