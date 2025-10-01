@@ -74,8 +74,10 @@ body {
   color: #153243;
 }
 
-.lead {
-  padding-top: 10px;
+.my-text {
+  font-size: 1.25rem; /* 22px */
+  line-height: 1.6rem; /* 32px */
+  letter-spacing: 0.028rem; /* ~0.44px (2% of 22px) */
 }
 
 /* Hero btn*/
