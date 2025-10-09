@@ -1,463 +1,496 @@
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="style.css" />
-<link
-  href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-  rel="stylesheet"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-/>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
 
-<nav
-  class="navbar custom-navbar navbar-expand-lg py-3"
-  data-aos="fade-down"
-  data-aos-delay="200"
-  data-aos-duration="1000"
->
-  <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand" href="index.html">
-      <span>Afra</span>
-      <span>Tetlay</span>
-    </a>
+    <!-- Mobile-friendly scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Toggler / Hamburger -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarContent"
-      aria-controls="navbarContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Page Title -->
+    <title>Afra Tetlay - Portfolio</title>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <div
-        class="ms-auto navbar-nav d-flex flex-column flex-lg-row align-items-start align-lg-center gap-3 gap-lg-5"
-      >
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="case-studies.html">Case Studies</a>
-        <a class="nav-link pill-button" href="get-in-touch.html"
-          >Get in Touch</a
+    <!-- Favicon (optional, replace with your own favicon.ico or PNG) -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS (Animations) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar custom-navbar navbar-expand-lg py-3 pb-3">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <span>Afra</span> <span>Tetlay</span>
+        </a>
+
+        <!-- Desktop Navbar (≥992px) -->
+        <div
+          class="collapse navbar-collapse d-none d-lg-block"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-duration="1000"
         >
-      </div>
-    </div>
-  </div>
-</nav>
-<section class="case-studies-section py-5">
-  <div class="container">
-    <div class="row align-items-center mb-5">
-      <!-- Content Card (Text first) -->
-      <div
-        class="col-12 mb-4 d-flex justify-content-center"
-        data-aos="fade-left"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-      >
-        <div class="rounded text-center">
-          <!-- Tags -->
-          <div class="mb-4">
-            <span class="badge background-blue text-white">App</span>
-          </div>
-          <!-- Title & Description -->
-          <h1 class="fw-bold text-blue">Gamehaul</h1>
-          <p>
-            In the rapidly growing gaming industry, enthusiasts often face
-            challenges when trying to purchase gaming equipment. Despite the
-            abundance of online platforms, gamers encounter issues related to
-            the unavailability of a dedicated and user-friendly solution
-            tailored to their specific needs.
-          </p>
-        </div>
-      </div>
-
-      <!-- Image (below text) -->
-      <div
-        class="col-12 text-center"
-        data-aos="fade-right"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-      >
-        <img
-          src="images/game-haul-image.png"
-          alt="Gamehaul"
-          class="case-study-img"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <!-- Title + Intro -->
-    <h5 class="text-blue fw-bold">Gamehaul - Games eCommerce app</h5>
-    <p>
-      Gamehaul is an
-      <span class="badge background-blue text-white">
-        e-commerce app designed for gamers</span
-      >
-      looking to enhance their gaming experience by offering a wide selection of
-      games, equipments and much more. The site
-      <span class="badge background-blue text-white"
-        >encourages users to explore and purchase products</span
-      >
-      across four key categories: hardware, peripherals, accessories, and
-      apparel, with personalised recommendations and streamlined navigation.
-    </p>
-  </div>
-</section>
-
-<!-- Project Overview -->
-<section class="m-5 py-5 px-5 background-blue text-white rounded">
-  <div class="container">
-    <h3 class="fw-bold mb-4">Project Overview</h3>
-
-    <div class="row g-4">
-      <!-- Left Column (Challenge + Goals) -->
-      <div class="col-12 col-lg-8">
-        <!-- Challenge Card -->
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-blue fw-bold">
-              <i class="bi bi-flag"></i> Challenge
-            </h5>
-            <p class="card-text text-dark">
-              In the rapidly growing gaming industry, enthusiasts often face
-              challenges when trying to purchase gaming equipment. Despite the
-              abundance of online platforms, gamers encounter issues related to
-              the unavailability of a dedicated and user-friendly solution
-              tailored to their specific needs.
-            </p>
+          <div class="ms-auto navbar-nav d-flex flex-row gap-5">
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="case-studies.html">Case Studies</a>
+            <a class="nav-link pill-button" href="get-in-touch.html"
+              >Get in Touch</a
+            >
           </div>
         </div>
 
-        <!-- Goals Card -->
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title text-blue fw-bold">
-              <i class="bi bi-bullseye text-blue"></i> Goals
-            </h5>
-            <p class="card-text text-dark">
-              The aim is to design an intuitive and seamless shopping experience
-              that caters to the unique preferences and requirements of gamers.
-              This involves simplifying the browsing process, providing relevant
-              product information, and offering personalised recommendations.
-            </p>
-          </div>
-        </div>
-      </div>
+        <!-- Mobile/Tablet Offcanvas Toggler (<992px) -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Right Column (Sidebar) -->
-      <div class="col-12 col-lg-4">
-        <!-- Role & Responsibilities Card -->
-        <div class="card shadow-sm mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-blue fw-bold">
-              <i class="bi bi-person-check"></i> Role & Responsibilities
-            </h5>
-            <ul class="mb-0 text-dark">
-              <li>Storyboarding</li>
-              <li>Accessibility</li>
-              <li>Prototyping</li>
-              <li>Wireframing</li>
-              <li>User Journey</li>
-              <li>UI Execution</li>
+        <!-- Offcanvas Menu -->
+        <div
+          class="offcanvas offcanvas-end d-lg-none"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body bg-white">
+            <!-- Add bg-white here -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="case-studies.html">Case Studies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pill-button" href="get-in-touch.html"
+                  >Get in Touch</a
+                >
+              </li>
             </ul>
           </div>
         </div>
+      </div>
+    </nav>
+    <section class="case-studies-section py-5">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <!-- Content Card (Text first) -->
+          <div
+            class="col-12 mb-4 d-flex justify-content-center"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="rounded text-center">
+              <!-- Tags -->
+              <div class="mb-4">
+                <span class="badge background-blue text-white">App</span>
+              </div>
+              <!-- Title & Description -->
+              <h1 class="fw-bold text-blue">Gamehaul</h1>
+              <p>
+                In the rapidly growing gaming industry, enthusiasts often face
+                challenges when trying to purchase gaming equipment. Despite the
+                abundance of online platforms, gamers encounter issues related
+                to the unavailability of a dedicated and user-friendly solution
+                tailored to their specific needs.
+              </p>
+            </div>
+          </div>
 
-        <!-- Tools Card -->
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title text-blue fw-bold">
-              <i class="bi bi-tools"></i> Tools
-            </h5>
-            <p class="mb-0 text-dark">Figma</p>
+          <!-- Image (below text) -->
+          <div
+            class="col-12 text-center"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="images/game-haul-image.png"
+              alt="Gamehaul"
+              class="case-study-img"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="py-5">
-  <div class="container">
-    <h3 class="text-blue fw-bold mt-5">Research</h3>
-    <p>
-      After conducting user interviews and empathy mapping, I've gained insights
-      into the needs and frustrations of gamers when it comes to purchasing
-      games and consoles. Many gamers are passionate about gaming, but they
-      often encounter difficulties in finding the latest releases and deals.
-      They express frustration with the fragmented nature of information, having
-      to check multiple sources to stay updated on new releases and discounts.
-      This process can be time-consuming and overwhelming, leading some gamers
-      to give up on finding what they're looking for. Additionally, gamers want
-      a streamlined and convenient way to purchase games and consoles,
-      preferably with the ability to buy directly from their smartphones. They
-      seek a platform that offers an intuitive browsing experience, clear
-      product information, and easy checkout options to make their gaming
-      purchases hassle-free.
-    </p>
-    <h4 class="text-blue fw-bold mt-5">Competitive analysis</h4>
-    <p>
-      After learning more about the game industry, I wanted to take a closer
-      look at my competitors and how they’re providing their customers with the
-      correct information. Through my market research, I identified some top
-      direct and indirect competitors within the industry such as:
-    </p>
-    <ul>
-      <li>CEX</li>
-      <li>GAME</li>
-      <li>Amazon</li>
-      <li>ASOS</li>
-    </ul>
-    <p>
-      <b>Direct competitors are game e-commerce sites</b> similar to Gamehaul,
-      while
-      <b
-        >indirect competitors aren’t focused solely on games but have a wide
-        variety products.</b
-      >
-      Exploring each of their apps and website, I evaluated the strengths and
-      weaknesses of each to see how Gamehaul could fill in any gaps moving
-      forward.
-    </p>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 d-flex flex-column align-items-center">
-        <p class="fw-bold mb-2">CEX</p>
-        <img
-          src="images/cex-image.png"
-          alt="CEX"
-          class="case-study-gamehaul img-fluid"
-        />
-      </div>
-      <div class="col-md-3 d-flex flex-column align-items-center">
-        <p class="fw-bold mb-2">GAME</p>
-        <img
-          src="images/game-image.png"
-          alt="GAME"
-          class="case-study-gamehaul img-fluid"
-        />
-      </div>
-      <div class="col-md-3 d-flex flex-column align-items-center">
-        <p class="fw-bold mb-2">Amazon</p>
-        <img
-          src="images/amazon-image.png"
-          alt="DB Booking"
-          class="case-study-gamehaul img-fluid"
-        />
-      </div>
-      <div class="col-md-3 d-flex flex-column align-items-center">
-        <p class="fw-bold mb-2">ASOS</p>
-        <img
-          src="images/asos-image.png"
-          alt="DB Booking"
-          class="case-study-gamehaul img-fluid"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <h3 class="text-blue fw-bold">Project Goals</h3>
-    <p>
-      I want to enhance the user experience by designing an intuitive, visually
-      engaging interface that makes browsing, searching, and purchasing games
-      seamless. Ensure mobile responsiveness and accessibility so the app is
-      inclusive and optimised across all devices. Design a streamlined and
-      secure checkout process to reduce cart abandonment and increase user
-      satisfaction.
-    </p>
-    <img
-      src="images/project-goal-gamehaul.png"
-      alt="Project Goals Venn Diagram"
-      class="img-fluid mx-auto d-block"
-      style="max-width: 800px"
-    />
-  </div>
-</section>
-<section class="container my-5">
-  <h3 class="text-blue fw-bold">Storyboard & paper wireframe</h3>
-  <p>
-    Storyboarding allows me to visually plan out scenes, helping to organise the
-    flow of the project. By sketching my paper wireframes, I aimed to
-    conceptualise the design and pinpoint the key challenges it needed to
-    tackle. When drafting the homepage wireframe, my objective was to
-    incorporate all essential information that users would require upon arriving
-    at the website.
-  </p>
-  <img src="images/storyboard-image.png" alt="" class="hero-image" />
-  <div class="row pt-3">
-    <div class="col-md-8">
-      <img src="images/storyboard-image-one.png" alt="" class="equal-image" />
-    </div>
-    <div class="col-md-4">
-      <img src="images/storyboard-image-two.png" alt="" class="equal-image" />
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h3 class="text-blue fw-bold">Digital wireframe</h3>
-  <p>
-    Digital wireframes serve as the blueprint for the gaming e-commerce website,
-    outlining the layout and functionality of key elements before detailed
-    design and development. These wireframes ensure a user-friendly interface,
-    with intuitive navigation and streamlined purchasing processes. By
-    visualising the structure, I can focus on enhancing the user experience and
-    efficiently meeting the needs of the diverse customer base.
-  </p>
-  <div class="row pt-3">
-    <div class="col-md-12">
-      <img
-        src="images/digital-wireframe-image.png"
-        alt=""
-        class="equal-image"
-      />
-    </div>
-  </div>
-  <div class="row pt-3">
-    <div class="col-md-12">
-      <img
-        src="images/digital-wireframe-image-one.png"
-        alt=""
-        class="equal-image"
-      />
-    </div>
-  </div>
-</section>
-<section class="container my-5">
-  <h3 class="text-blue fw-bold">Final Design</h3>
-  <p>
-    The final design of the gaming e-commerce website features a sleek,
-    intuitive interface with streamlined navigation to enhance user experience.
-    Personalised recommendation algorithms suggest products based on individual
-    preferences, purchase history, and browsing behavior, ensuring users can
-    easily find items tailored to their needs. Key functionalities include
-    profile creation, favourite items, and real-time personalised offers and
-    discounts to boost engagement and satisfaction. The design balances
-    aesthetic appeal with user-centric functionality, creating a seamless and
-    enjoyable shopping experience for gamers.
-  </p>
-  <div class="row pt-3">
-    <div class="col-md-12">
-      <img src="images/final-design-game-haul.png" alt="" class="equal-image" />
-    </div>
-  </div>
-  <div class="row pt-3">
-    <div class="col-md-12">
-      <img
-        src="images/final-design-game-haul-one.png"
-        alt=""
-        class="equal-image"
-      />
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="py-5 background-blue text-white">
-  <div class="container">
-    <div class="row align-items-stretch g-4">
-      <!-- Left Column -->
-      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
-        <h5 class="fw-bold">Reflection & Next steps</h5>
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-dark">
-            <p>
-              Perform additional usability testing on the updated website to
-              ensure its effectiveness.
-            </p>
-            <p>
-              Identify any further areas requiring attention and refine the
-              website design accordingly to meet those needs.
-            </p>
+    <section class="py-5">
+      <div class="container">
+        <!-- Title + Intro -->
+        <h5 class="text-blue fw-bold">Gamehaul - Games eCommerce app</h5>
+        <p>
+          Gamehaul is an
+          <span class="badge background-blue text-white">
+            e-commerce app designed for gamers</span
+          >
+          looking to enhance their gaming experience by offering a wide
+          selection of games, equipments and much more. The site
+          <span class="badge background-blue text-white"
+            >encourages users to explore and purchase products</span
+          >
+          across four key categories: hardware, peripherals, accessories, and
+          apparel, with personalised recommendations and streamlined navigation.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview background-blue text-white rounded">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Project Overview</h3>
+
+        <div class="row g-4">
+          <!-- Left Column (Challenge + Goals) -->
+          <div class="col-12 col-lg-8">
+            <!-- Challenge Card -->
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h5 class="card-title text-blue fw-bold">
+                  <i class="bi bi-flag"></i> Challenge
+                </h5>
+                <p class="card-text text-dark">
+                  In the rapidly growing gaming industry, enthusiasts often face
+                  challenges when trying to purchase gaming equipment. Despite
+                  the abundance of online platforms, gamers encounter issues
+                  related to the unavailability of a dedicated and user-friendly
+                  solution tailored to their specific needs.
+                </p>
+              </div>
+            </div>
+
+            <!-- Goals Card -->
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-blue fw-bold">
+                  <i class="bi bi-bullseye text-blue"></i> Goals
+                </h5>
+                <p class="card-text text-dark">
+                  The aim is to design an intuitive and seamless shopping
+                  experience that caters to the unique preferences and
+                  requirements of gamers. This involves simplifying the browsing
+                  process, providing relevant product information, and offering
+                  personalised recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Sidebar) -->
+          <div class="col-12 col-lg-4">
+            <!-- Role & Responsibilities Card -->
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h5 class="card-title text-blue fw-bold">
+                  <i class="bi bi-person-check"></i> Role & Responsibilities
+                </h5>
+                <ul class="mb-0 text-dark">
+                  <li>Storyboarding</li>
+                  <li>Accessibility</li>
+                  <li>Prototyping</li>
+                  <li>Wireframing</li>
+                  <li>User Journey</li>
+                  <li>UI Execution</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-blue fw-bold">
+                  <i class="bi bi-tools"></i> Tools
+                </h5>
+                <p class="mb-0 text-dark">Figma</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Right Column -->
-      <div class="col-12 col-lg-6 pt-4 pt-lg-0">
-        <h5 class="fw-bold">Accessibility considerations</h5>
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-dark">
-            <p>
-              <strong>Impact:</strong> Our customers found the ecommerce game
-              app easy to navigate.
-            </p>
-            <p>
-              <strong>What I learned:</strong> Even minor adjustments can
-              significantly influence usability, so I prioritise user needs and
-              design accordingly.
-            </p>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-blue fw-bold mt-5">Research</h3>
+        <p>
+          After conducting user interviews and empathy mapping, I've gained
+          insights into the needs and frustrations of gamers when it comes to
+          purchasing games and consoles. Many gamers are passionate about
+          gaming, but they often encounter difficulties in finding the latest
+          releases and deals. They express frustration with the fragmented
+          nature of information, having to check multiple sources to stay
+          updated on new releases and discounts. This process can be
+          time-consuming and overwhelming, leading some gamers to give up on
+          finding what they're looking for. Additionally, gamers want a
+          streamlined and convenient way to purchase games and consoles,
+          preferably with the ability to buy directly from their smartphones.
+          They seek a platform that offers an intuitive browsing experience,
+          clear product information, and easy checkout options to make their
+          gaming purchases hassle-free.
+        </p>
+        <h4 class="text-blue fw-bold mt-5">Competitive analysis</h4>
+        <p>
+          After learning more about the game industry, I wanted to take a closer
+          look at my competitors and how they’re providing their customers with
+          the correct information. Through my market research, I identified some
+          top direct and indirect competitors within the industry such as:
+        </p>
+        <ul>
+          <li>CEX</li>
+          <li>GAME</li>
+          <li>Amazon</li>
+          <li>ASOS</li>
+        </ul>
+        <p>
+          <b>Direct competitors are game e-commerce sites</b> similar to
+          Gamehaul, while
+          <b
+            >indirect competitors aren’t focused solely on games but have a wide
+            variety products.</b
+          >
+          Exploring each of their apps and website, I evaluated the strengths
+          and weaknesses of each to see how Gamehaul could fill in any gaps
+          moving forward.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <p class="fw-bold mb-2">CEX</p>
+            <img
+              src="images/cex-image.png"
+              alt="CEX"
+              class="case-study-gamehaul img-fluid"
+            />
+          </div>
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <p class="fw-bold mb-2">GAME</p>
+            <img
+              src="images/game-image.png"
+              alt="GAME"
+              class="case-study-gamehaul img-fluid"
+            />
+          </div>
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <p class="fw-bold mb-2">Amazon</p>
+            <img
+              src="images/amazon-image.png"
+              alt="DB Booking"
+              class="case-study-gamehaul img-fluid"
+            />
+          </div>
+          <div class="col-md-3 d-flex flex-column align-items-center">
+            <p class="fw-bold mb-2">ASOS</p>
+            <img
+              src="images/asos-image.png"
+              alt="DB Booking"
+              class="case-study-gamehaul img-fluid"
+            />
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <div class="container">
+        <h3 class="text-blue fw-bold">Project Goals</h3>
+        <p>
+          I want to enhance the user experience by designing an intuitive,
+          visually engaging interface that makes browsing, searching, and
+          purchasing games seamless. Ensure mobile responsiveness and
+          accessibility so the app is inclusive and optimised across all
+          devices. Design a streamlined and secure checkout process to reduce
+          cart abandonment and increase user satisfaction.
+        </p>
+        <img
+          src="images/project-goal-gamehaul.png"
+          alt="Project Goals Venn Diagram"
+          class="img-fluid mx-auto d-block"
+          style="max-width: 800px"
+        />
+      </div>
+    </section>
+    <section class="container my-5">
+      <h3 class="text-blue fw-bold">Storyboard & paper wireframe</h3>
+      <p>
+        Storyboarding allows me to visually plan out scenes, helping to organise
+        the flow of the project. By sketching my paper wireframes, I aimed to
+        conceptualise the design and pinpoint the key challenges it needed to
+        tackle. When drafting the homepage wireframe, my objective was to
+        incorporate all essential information that users would require upon
+        arriving at the website.
+      </p>
+      <img src="images/storyboard-image.png" alt="" class="hero-image" />
+      <div class="row pt-3">
+        <div class="col-md-8">
+          <img
+            src="images/storyboard-image-one.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="images/storyboard-image-two.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <h3 class="text-blue fw-bold">Digital wireframe</h3>
+      <p>
+        Digital wireframes serve as the blueprint for the gaming e-commerce
+        website, outlining the layout and functionality of key elements before
+        detailed design and development. These wireframes ensure a user-friendly
+        interface, with intuitive navigation and streamlined purchasing
+        processes. By visualising the structure, I can focus on enhancing the
+        user experience and efficiently meeting the needs of the diverse
+        customer base.
+      </p>
+      <div class="row pt-3">
+        <div class="col-md-12">
+          <img
+            src="images/digital-wireframe-image.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-12">
+          <img
+            src="images/digital-wireframe-image-one.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <h3 class="text-blue fw-bold">Final Design</h3>
+      <p>
+        The final design of the gaming e-commerce website features a sleek,
+        intuitive interface with streamlined navigation to enhance user
+        experience. Personalised recommendation algorithms suggest products
+        based on individual preferences, purchase history, and browsing
+        behavior, ensuring users can easily find items tailored to their needs.
+        Key functionalities include profile creation, favourite items, and
+        real-time personalised offers and discounts to boost engagement and
+        satisfaction. The design balances aesthetic appeal with user-centric
+        functionality, creating a seamless and enjoyable shopping experience for
+        gamers.
+      </p>
+      <div class="row pt-3">
+        <div class="col-md-12">
+          <img
+            src="images/final-design-game-haul.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-12">
+          <img
+            src="images/final-design-game-haul-one.png"
+            alt=""
+            class="equal-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Navigation (above footer) -->
+    <div
+      class="d-flex justify-content-between align-items-center px-4 py-3 background-green text-white"
+    >
+      <a href="index.html" class="text-white fw-bold text-decoration-none">
+        <i class="bi bi-arrow-left"></i> Back to homepage
+      </a>
+      <a href="platecraft.html" class="text-white fw-bold text-decoration-none">
+        Next Project – Plate Craft <i class="bi bi-arrow-right"></i>
+      </a>
     </div>
-  </div>
-</section>
 
-<!-- Project Navigation (above footer) -->
-<div
-  class="d-flex justify-content-between align-items-center px-4 py-3 background-green text-white"
->
-  <a href="index.html" class="text-white fw-bold text-decoration-none">
-    <i class="bi bi-arrow-left"></i> Back to homepage
-  </a>
-  <a href="platecraft.html" class="text-white fw-bold text-decoration-none">
-    Next Project – Plate Craft <i class="bi bi-arrow-right"></i>
-  </a>
-</div>
+    <!-- Contact Section -->
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-4"
+      style="background-color: #0d3448; color: white"
+    >
+      <!-- Back to Top -->
+      <div class="text-center mb-3 mb-md-0">
+        <a href="#top" class="btn btn-light shadow-sm">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+        <div class="small mt-2">Back to the top</div>
+      </div>
 
-<!-- Contact Section -->
-<div
-  class="d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-4"
-  style="background-color: #0d3448; color: white"
->
-  <!-- Back to Top -->
-  <div class="text-center mb-3 mb-md-0">
-    <a href="#top" class="btn btn-light shadow-sm">
-      <i class="bi bi-arrow-up"></i>
-    </a>
-    <div class="small mt-2">Back to the top</div>
-  </div>
+      <!-- Contact Info -->
+      <div class="text-center">
+        <h4 class="fw-bold mb-2">
+          Like what you see? Let’s talk <span>😊</span>
+        </h4>
+        <p class="mb-0">
+          <i class="bi bi-envelope"></i> Email Address:
+          <a
+            href="mailto:afraetlay@gmail.com"
+            class="text-white text-decoration-none"
+            >afratetlay@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
 
-  <!-- Contact Info -->
-  <div class="text-center">
-    <h4 class="fw-bold mb-2">Like what you see? Let’s talk <span>😊</span></h4>
-    <p class="mb-0">
-      <i class="bi bi-envelope"></i> Email Address:
-      <a
-        href="mailto:afraetlay@gmail.com"
-        class="text-white text-decoration-none"
-        >afratetlay@gmail.com</a
-      >
-    </p>
-  </div>
-</div>
+    <footer class="text-center py-3 bg-dark text-white">
+      &copy; <span id="year"></span> Afra Tetlay. All rights reserved.
+    </footer>
 
-<footer class="text-center py-3 bg-dark text-white">
-  &copy; <span id="year"></span> Afra Tetlay. All rights reserved.
-</footer>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({ once: true }); // only animate once
-    document.getElementById("year").textContent = new Date().getFullYear();
-  });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({ once: true }); // only animate once
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

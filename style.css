@@ -194,6 +194,18 @@ body {
   padding: 50px 150px;
 }
 
+/* Tablet (≤ 992px) and Mobile (≤ 768px) */
+@media (max-width: 992px) {
+  .custom-padding {
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-padding {
+    padding: 20px 25px;
+  }
+}
 /* Gamehaul*/
 
 /* 4 Small images */
@@ -201,6 +213,25 @@ body {
   max-width: 75%;
   height: auto;
   display: block;
+}
+
+/* project overview */
+.project-overview {
+  padding: 3rem 3rem; /* equivalent to py-5 px-5 */
+}
+
+@media (max-width: 992px) {
+  /* Tablet */
+  .project-overview {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .project-overview {
+    padding: 10px 0;
+  }
 }
 
 /*Storyboard images*/
@@ -229,10 +260,17 @@ body {
 }
 
 /* Icon size */
+/* Default (Desktop) */
 .custom-gap {
-  gap: 8rem; /* 10rem spacing between icons */
+  gap: 8rem;
 }
 
+/* Tablet & Mobile */
+@media (max-width: 992px) {
+  .custom-gap {
+    gap: 2rem;
+  }
+}
 .custom-icon {
   font-size: 30px; /* set icon size */
 }
@@ -246,16 +284,7 @@ body {
 @media (max-width: 992px) {
   /* md and below */
   .hero-section {
-    padding-left: 1rem; /* or 0 */
-    padding-right: 1rem; /* or 0 */
-  }
-}
-
-/* Remove container side padding on mobile + tablet */
-@media (max-width: 991.98px) {
-  .container {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 1rem !important; /* or 0 */
+    padding-right: 1rem !important; /* or 0 */
   }
 }
