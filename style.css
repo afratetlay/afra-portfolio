@@ -184,10 +184,10 @@ body {
   background-color: #f8dddd;
 }
 .background-light-blue {
-  background-color: #f8dddd;
+  background-color: #afe0e0;
 }
 .background-light-green {
-  background-color: #f8dddd;
+  background-color: #a9b388;
 }
 
 .custom-padding {
@@ -223,14 +223,14 @@ body {
 @media (max-width: 992px) {
   /* Tablet */
   .project-overview {
-    padding: 10px 0;
+    padding: 30px 0;
   }
 }
 
 @media (max-width: 768px) {
   /* Mobile */
   .project-overview {
-    padding: 10px 0;
+    padding: 30px 0;
   }
 }
 
@@ -265,6 +265,15 @@ body {
   gap: 8rem;
 }
 
+/*Nav bar */
+/* Mobile & Tablet */
+@media (max-width: 992px) {
+  .nav-link {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
 /* Tablet & Mobile */
 @media (max-width: 992px) {
   .custom-gap {
@@ -279,6 +288,19 @@ body {
 .email {
   text-decoration: none;
   color: inherit;
+}
+
+/* Default (Desktop) */
+.hero-class {
+  padding-top: 3rem; /* or whatever py value you’re using */
+  padding-bottom: 3rem;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 992px) {
+  .hero-class {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media (max-width: 992px) {
